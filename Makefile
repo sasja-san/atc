@@ -29,6 +29,7 @@ dsd-extract:
 		--arm7-bios $(ARM7_BIOS) \
 		--rom $(INPUT_ROM) \
 		--output-path $(EXTRACT_DIR)
+	@ls -R $(EXTRACT_DIR)
 	@printf "\nDSD extraction of %s\n\tmade to %s\n" \
 		$(INPUT_ROM) \
 		$(EXTRACT_DIR)
@@ -49,7 +50,7 @@ dsd-init:
 		--rom-config $(EXTRACT_CONFIG_YAML) \
 		--output-path $(DSD_CONFIG_DIR) \
 		--build-path $(BUILD_PATH)
-	@printf "DSD init into:\n\t%s\n\t%s\n" \
+	@printf "\nDSD init into:\n\t%s\n\t%s\n" \
 		$(DSD_CONFIG_DIR) \
 		$(BUILD_PATH)
 
@@ -59,6 +60,8 @@ dsd-disasm:
 		--config-path $(DSD_CONFIG_ARM9_CONFIG_FILE) \
 		--asm-path $(ASM_OUT_PATH) \
 		--ual
+	@printf "\nDSD disassembly was done in %s\n" $(ASM_OUT_PATH)
+	@printf "\nNote: This is only for testing purposes."
 
 
 
