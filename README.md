@@ -95,10 +95,10 @@ Notable entries               | How it got there             | Current use
 # Getting Started
 
 
-  #. Place the roms in the `rom/` directory.
-  #. Run `make dsd-extract`. Look in `extract/` and `extract/files/` to see that it worked.
-  #. Run `make dsd-build` and check if you got back what you had; `diff rom/out.nds rom/atc.nds`.
-  #. For this project, `make dsd-init` has already been run, so files in `dsd-config/` should already exist.
+  1. Place the roms in the `rom/` directory.
+  2. Run `make dsd-extract`. Look in `extract/` and `extract/files/` to see that it worked.
+  3. Run `make dsd-build` and check if you got back what you had; `diff rom/out.nds rom/atc.nds`.
+  4. For this project, `make dsd-init` has already been run, so files in `dsd-config/` should already exist.
   
   
 
