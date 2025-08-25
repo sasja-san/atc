@@ -27,7 +27,7 @@ Provided binaries are:
 
 Because GPL3 is an intolerable bullshit license, you'll have to provide [m2c](https://github.com/matt-kempster/m2c) yourself.
 
-Getting `mwccarm` is done through a download script and its licence should be
+Getting mwccarm is done through a download script and any licence should be
 contained within the zip.
 
 

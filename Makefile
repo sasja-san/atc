@@ -18,14 +18,13 @@ EXTRACT_DIR=./extract
 EXTRACT_CONFIG_YAML=$(EXTRACT_DIR)/config.yaml
 
 DSD_CONFIG_DIR=./dsd-config
-DSD_CONFIG_ARM9_CONFIG_FILE=$(DSD_CONFIG_DIR)/arm9/config.yaml
+ARM9_CONFIG_FILE=$(DSD_CONFIG_DIR)/arm9/config.yaml
 
 
 BUILD_PATH=./build
 ASM_OUT_PATH=./asm
 
-# The data files will land in a directory called 'data' 
-NITRO_FS_DIR=./nitro_fs/
+
 
 dsd-extract:
 	$(DSD) \
@@ -58,10 +57,11 @@ dsd-init:
 		$(DSD_CONFIG_DIR) \
 		$(BUILD_PATH)
 
+
 dsd-disasm:
 	$(DSD) \
 		dis \
-		--config-path $(DSD_CONFIG_ARM9_CONFIG_FILE) \
+		--config-path $(ARM9_CONFIG_FILE) \
 		--asm-path $(ASM_OUT_PATH) \
 		--ual
 	@printf "\nDSD disassembly was done in %s\n" $(ASM_OUT_PATH)
