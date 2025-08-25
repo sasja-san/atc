@@ -2,6 +2,10 @@
 # EXECUTABLE FILES
 FASMARM=./tools/fasmarm
 DSD=./tools/dsd
+OBJDIFF=./tools/objdiff-cli
+WIBO=./tools/wibo
+
+
 
 # ROM PATHS
 INPUT_ROM=./rom/atc.nds

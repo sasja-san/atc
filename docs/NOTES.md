@@ -36,22 +36,6 @@ This matches 4.2-080118 (a patch to NitroSDK-4_2.zip)
 
 
 
-
-# aoue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Game Logic
 
 ## Airport codes
