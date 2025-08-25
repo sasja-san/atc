@@ -1,25 +1,4 @@
 
-# Setting up the Project
-
-First the rom and arm7 bios needs to be in rom/.
-
-```{.txt}
-$ sha1sum rom/air_traffic_chaos_u.nds
-4f36e459b6d2472c403a008a61140377a6c53229  rom/air_traffic_chaos_u.nds
-```
-
-To get the arm7 bios, follow this guide:
-<https://wiki.ds-homebrew.com/ds-index/ds-bios-firmware-dump>
-
-
-
-
-
-
-
-
-
-
 
 # Original NitroSDK version used for US rom 
 

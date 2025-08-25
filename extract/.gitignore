@@ -1,0 +1,16 @@
+# Try to *NOT* log any copyrighted material.
+# But if it's material *generated* fram the
+# copyrighted material, like with symbol.txt
+# then that is allowed.
+
+./header_logo.png
+
+arm7/arm7.bin
+
+arm9/arm9.bin
+arm9/dtcm.bin
+arm9/itcm.bin
+
+banner/
+files/
+
