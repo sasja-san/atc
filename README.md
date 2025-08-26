@@ -98,7 +98,7 @@ Notable entries               | How it got there             | Current use
   1. Place the roms in the `rom/` directory.
   2. Run `make dsd-extract`. Look in `extract/` and `extract/files/` to see that it worked.
   3. Run `make dsd-build` and check if you got back what you had; `diff rom/out.nds rom/atc.nds`.
-    * `make dsd-init` has already been run, so files in `dsd-config/` should already exist. Look 
+    - `make dsd-init` has already been run, so files in `dsd-config/` should already exist. Look 
   4. Something about de-linking?
   
 
