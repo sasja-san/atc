@@ -73,7 +73,7 @@ Notable entries               | How it got there             | Current use
 `extract/files/`              | `$ make dsd-extract`         | Files from the NitroFS section of the rom.
 `extract/files/data/rjff/`    | `$ make dsd-extract`         | Data files for the Fukuoka (first) stage. [RJFF](https://www.openaip.net/data/airports/62614cbfcb27f4250945361a#10.96/33.6152/130.4825) is its [ICAO code](https://en.wikipedia.org/wiki/ICAO_airport_code).
 `extract/config.yaml`         | `$ make dsd-extract`         | Configuration file for re-building the rom with `dsd rom build`.
-`dsd-config/`                 | `$ make dsd-init`            | Place to store the ARM 9 binary metada. Needed in order to re-build the binary.
+`dsd-config/`                 | `$ make dsd-init`            | All the files on how the rom was configured, so that it can be re-created.
 `dsd-config/arm9/symbols.txt` | `$ make dsd-init`            | A mapping of the ARM 9 binary. Ghidra and other helps add more information here.
 `rom/`                        | `$ mkdir rom`                | Storage location for `atc.nds` and `bios7.bin`.
 `rom/out.nds`                 | `$ make dsd-build`           | This is the output rom.
@@ -98,8 +98,8 @@ Notable entries               | How it got there             | Current use
   1. Place the roms in the `rom/` directory.
   2. Run `make dsd-extract`. Look in `extract/` and `extract/files/` to see that it worked.
   3. Run `make dsd-build` and check if you got back what you had; `diff rom/out.nds rom/atc.nds`.
-  4. For this project, `make dsd-init` has already been run, so files in `dsd-config/` should already exist.
-  
+    * `make dsd-init` has already been run, so files in `dsd-config/` should already exist. Look 
+  4. Something about de-linking?
   
 
 
