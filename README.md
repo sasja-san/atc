@@ -20,10 +20,10 @@ the `tools/` directory. These are covered under their own licenses.
 The binaries provided have been compressed using `upx --best --lzma`.
 Provided binaries are:
 
-    * [dsd](https://github.com/AetiasHax/ds-decomp)
-    * [fasmarm](https://arm.flatassembler.net)
-    * [objdiff](https://github.com/encounter/objdiff)
-    * [wibo](https://github.com/decompals/wibo)
+  * [dsd](https://github.com/AetiasHax/ds-decomp)
+  * [fasmarm](https://arm.flatassembler.net)
+  * [objdiff](https://github.com/encounter/objdiff)
+  * [wibo](https://github.com/decompals/wibo)
 
 Because GPL3 is an intolerable bullshit license, you'll have to provide [m2c](https://github.com/matt-kempster/m2c) yourself.
 
