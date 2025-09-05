@@ -23,7 +23,33 @@ MWCCARM_VER=2.0/sp1p5
 ###################################################
 MWLD_EXE="./tools/mwccarm/$(MWCCARM_VER)/mwldarm.exe"
 MWLD_FLAGS=-proc arm946e -dead -nostdlib -interworking -map closure,unused -msgstyle gcc 
-MWLD=$(WIBO) $(MWLD_EXE) $(MWLD_FLAGS)
+MWLD_EXTRA_FLAGS=-m Entry
+MWLD_OUTPUT_BINARY_ELF=$(BUILD_DIR)/linked_and_ready_to_go.elf
+
+MWLD=$(WIBO) $(MWLD_EXE) $(MWLD_FLAGS) $(MWLD_EXTRA_FLAGS)
+
+BUILD_DIR=./build
+#
+# rule mwld
+#   command = ./wibo "./tools/mwccarm/2.0/sp1p5/mwldarm.exe" -proc arm946e $
+#       -interworking -map closure,unused -msgstyle gcc -nodead -nostdlib $
+#       $extra_ld_flags @$objects_file $lcf_file -o $out
+# 
+#		build/delinks/itcm_0.o \
+#		build/delinks/dtcm_1.o \
+#		build/delinks/main_4.o \
+#
+#		$(BUILD_DIR)/objects.txt \
+
+link:
+	$(MWLD) \
+		$(BUILD_DIR)/arm9.lcf \
+		build/delinks/itcm_0.o \
+		build/delinks/dtcm_1.o \
+		build/delinks/main_4.o \
+		-o $(MWLD_OUTPUT_BINARY_ELF)
+
+
 
 
 ###################################################
@@ -56,8 +82,10 @@ dsd-extract:
 
 
 OUTPUT_ROM=./rom/out.nds
+DSD_CONFIG_DIR=./dsd-config
 ROM_CONFIGURATION_YAML=$(EXTRACT_DIR)/config.yaml
 dsd-build:
+	@printf "\nReplace old extracted roms with newly built ones.\n"
 	$(DSD) \
 		rom build \
 		--arm7-bios $(ARM7_BIOS) \
@@ -67,8 +95,6 @@ dsd-build:
 
 
 
-DSD_CONFIG_DIR=./dsd-config
-BUILD_DIR=./build
 dsd-init:
 	$(DSD) \
 		init \
@@ -107,13 +133,17 @@ dsd-delink:
 	@printf "\nDSD delinking done. "
 	@printf "ELF files written to:\n\t%s/delinks.\n" $(BUILD_DIR)
 
+dsd-delink-json:
+	@printf "\nDelinking information in a nice JSON format:\n\n"
+	@$(DSD) \
+		json delink \
+		--config-path $(ARM9_BINARY_CONFIGURATION)
+
 
 dsd-lcf:
 	$(DSD) \
 		lcf \
 		--config-path $(ARM9_BINARY_CONFIGURATION)
-		-- 
-		
 
 
 clean:
