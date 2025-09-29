@@ -4,7 +4,6 @@
     .data       start:0x020701e0 end:0x020789e0 kind:data align:32
     .bss        start:0x020789e0 end:0x022080e0 kind:bss align:32
 
-src/lib/string.c
-    complete
-    .text       start:0x02000e04 end:0x02000e24
+// src/lib/string.c:
+//     .text       start:0x02000e04 end:0x02000e24
 
