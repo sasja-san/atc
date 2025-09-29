@@ -19,10 +19,16 @@ MWCCARM_VER=2.0/sp1p5
 
 
 ###################################################
-# SET UP THE LINKER COMMAND
+# LINKER COMMAND
 ###################################################
 MWLD_EXE="./tools/mwccarm/$(MWCCARM_VER)/mwldarm.exe"
-MWLD_FLAGS=-proc arm946e -dead -nostdlib -interworking -map closure,unused -msgstyle gcc 
+MWLD_FLAGS= \
+	-proc arm946e \
+	-dead \
+	-nostdlib \
+	-interworking \
+	-map closure,unused \
+	-msgstyle gcc 
 MWLD_EXTRA_FLAGS=-m Entry
 MWLD_OUTPUT_BINARY_ELF=$(BUILD_DIR)/linked_and_ready_to_go.elf
 
@@ -55,14 +61,49 @@ link:
 ###################################################
 # SET UP THE COMPILER COMMAND
 ###################################################
+#
+# 					from TWEWYs build.ninja
+# rule mwcc
+#   command = ./wibo "./tools/mwccarm/2.0/sp1p5/mwccarm.exe" -O4,p -enum int $
+#       -char signed -proc arm946e -gccext,on -fp soft -inline noauto -RTTI $
+#       off -interworking -w off -sym on -gccinc -nolink -msgstyle gcc -enc $
+#       SJIS -i include -i libs/include $cc_flags -d $game_version -MD -c $in $
+#       -o $basedir && $python tools/transform_dep.py $basefile.d $basefile.d
+#   depfile = $basefile.d
+#
+MWCC_TWEWY_FLAGS= \
+ 	-O4,p \
+ 	-enum int \
+ 	-char signed \
+ 	-proc arm946e \
+ 	-gccext,on \
+ 	-fp soft \
+ 	-inline noauto \
+ 	-RTTI off \
+ 	-interworking \
+ 	-w off \
+ 	-sym on \
+ 	-gccinc \
+ 	-nolink \
+ 	-msgstyle gcc \
+ 	-enc SJIS
+ # -i include -i libs/include $cc_flags
+
 MWCC_EXE=./tools/mwccarm/$(MWCCARM_VER)/mwccarm.exe
-MWCC_CFLAGS=-O4,p -enum int -char signed -str noreuse -proc arm946e -gccext,on -fp soft -inline noauto -lang=c
-MWCC=$(WIBO) $(MWCC_EXE) $(MWCC_CFLAGS)
-print-mmwc-strings:
-	@#printf "mwcc exe: \t%s\n" $(MWCC_EXE)
-	@#printf "mwcc flags:\n"
-	@#printf "\t%s\n" $(MWCC_CFLAGS) 
-	$(MWCC)
+MWCC_CFLAGS= \
+	-O4,p \
+	-enum int \
+	-char signed \
+	-str noreuse \
+	-proc arm946e \
+	-gccext,on \
+	-fp soft \
+	-inline noauto \
+	-lang=c
+# MWCC=$(WIBO) $(MWCC_EXE) $(MWCC_CFLAGS) 
+MWCC=$(WIBO) $(MWCC_EXE) $(MWCC_TWEWY_FLAGS)
+compile:
+	$(MWCC) src/lib/string.c -o build/src/lib/string.o
 
 
 
@@ -74,11 +115,11 @@ dsd-extract:
 		rom extract \
 		--arm7-bios $(ARM7_BIOS) \
 		--rom $(INPUT_ROM) \
-		--output-path $(EXTRACT_DIR)
+		--output-path $(EXTRACT_DIR) \
+		--verbose
 	@printf "\nDSD extraction of %s\n\tmade to %s\n" \
 		$(INPUT_ROM) \
 		$(EXTRACT_DIR)
-
 
 
 OUTPUT_ROM=./rom/out.nds
@@ -90,9 +131,9 @@ dsd-build:
 		rom build \
 		--arm7-bios $(ARM7_BIOS) \
 		--config $(ROM_CONFIGURATION_YAML) \
-		--rom $(OUTPUT_ROM)
+		--rom $(OUTPUT_ROM) \
+		--verbose
 	@printf "\nDSD rom build done: \n\t%s\n" $(OUTPUT_ROM)
-
 
 
 dsd-init:
@@ -100,7 +141,8 @@ dsd-init:
 		init \
 		--rom-config $(ROM_CONFIGURATION_YAML) \
 		--output-path $(DSD_CONFIG_DIR) \
-		--build-path $(BUILD_DIR)
+		--build-path $(BUILD_DIR) \
+		--verbose
 	@printf "\nDSD init into:\n\t%s\n\t%s\n" \
 		$(DSD_CONFIG_DIR) \
 		$(BUILD_DIR)
@@ -117,7 +159,8 @@ dsd-disasm:
 		dis \
 		--config-path $(ARM9_BINARY_CONFIGURATION) \
 		--asm-path $(ASM_OUT_DIR) \
-		--ual
+		--ual \
+		--verbose
 	@printf "\nDSD disassembly was done in %s\n" $(ASM_OUT_DIR)
 	@printf "\nNote: This is only for testing purposes."
 
@@ -129,9 +172,9 @@ dsd-disasm:
 dsd-delink:
 	$(DSD) \
 		delink \
-		--config-path $(ARM9_BINARY_CONFIGURATION)
-	@printf "\nDSD delinking done. "
-	@printf "ELF files written to:\n\t%s/delinks.\n" $(BUILD_DIR)
+		--config-path $(ARM9_BINARY_CONFIGURATION) \
+		--verbose
+
 
 dsd-delink-json:
 	@printf "\nDelinking information in a nice JSON format:\n\n"
@@ -143,7 +186,9 @@ dsd-delink-json:
 dsd-lcf:
 	$(DSD) \
 		lcf \
-		--config-path $(ARM9_BINARY_CONFIGURATION)
+		--config-path $(ARM9_BINARY_CONFIGURATION) \
+		--verbose
+	
 
 
 clean:
