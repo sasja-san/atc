@@ -1,32 +1,20 @@
 
 
-# Original NitroSDK version used for US rom 
+# SDK version 
 
 After running `dsd rom extract`, in `extract/arm9/arm9.yaml`
 there's a line `sdk_version: 67269937`
 
-The definition in `NitroSDK/include/nitro/version.h` is
-
-```{.c}
-#define SDK_VERSION_NUMBER(major, minor, relstep) \
-  (((major) << 24) | ((minor) << 16) | ((relstep) << 0))
-```
-
+```{.txt}
 67269937 == 0x04_02_7531
   0x7531 == 30001
+```
 
 Which gives us
 
-```{.txt}
-  SDK_VERSION_MAJOR		4
-  SDK_VERSION_MINOR		2
-  SDK_VERSION_RELSTEP		30001
-```
-
-This matches 4.2-080118 (a patch to NitroSDK-4_2.zip)
-
-
-
+  * Major version: 4
+  * Minor version: 2
+  * Patch version: 30001
 
 
 
