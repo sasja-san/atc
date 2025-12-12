@@ -1,0 +1,2901 @@
+{
+  "compilers": {
+    "mwcc_20_72": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_20_79": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_20_82": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_20_84": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_20_87": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_114": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_123": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_126": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_131": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_133": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_134": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_136": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_137": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_138": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_30_139": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1018": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1024": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1026": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1027": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1028": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1034": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "mwcc_40_1036": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset", "id": "mwcc_opt_level",
+          "flags": [ "-O0", "-O0,p", "-O0,s", "-O1", "-O1,p", "-O1,s", "-O2", "-O2,p", "-O2,s", "-O3", "-O3,p", "-O3,s", "-O4", "-O4,p", "-O4,s" ]
+        },
+        {
+          "type": "flagset", "id": "mwcc_inline_options",
+          "flags": [ "-inline on", "-inline off", "-inline auto", "-inline noauto", "-inline all", "-inline deferred", "-inline bottomup", "-inline nobottomup" ]
+        },
+        {
+          "type": "flagset", "id": "mwcc_string_constant_options",
+          "flags": [ "-str reuse", "-str pool", "-str readonly", "-str reuse,pool,readonly" ]
+        },
+        {
+          "type": "flagset", "id": "mwcc_source_language",
+          "flags": [ "-lang=c", "-lang=c++", "-lang=c99", "-lang=ec++", "-lang=objc" ]
+        },
+        {
+          "type": "flagset", "id": "mwcc_char_signedness",
+          "flags": [ "-char signed", "-char unsigned" ]
+        },
+        {
+          "type": "checkbox", "id": "mwcc_cpp_exceptions_off", "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset", "id": "mwcc_enum_size",
+          "flags": [ "-enum int", "-enum min" ]
+        },
+        {
+          "type": "checkbox", "id": "mwcc_rtti_off", "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox", "id": "mwcc_line_numbers_on", "flag": "-sym on"
+        },
+        {
+          "type": "flagset", "id": "mwcc_floating_point",
+          "flags": [ "-fp soft", "-fp vfpv1", "-fp vfpv2" ]
+        },
+        {
+          "type": "checkbox", "id": "mwcc_rostr", "flag": "-rostr"
+        },
+        {
+          "type": "checkbox", "id": "mwcc_enc_sjis", "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset", "id": "diff_algorithm",
+          "flags": [ "-DIFFlevenshtein", "-DIFFdifflib" ]
+        },
+        {
+          "type": "checkbox", "id": "diff_function_symbols", "flag": "-DIFFdiff_function_symbols" }
+      ]
+    },
+    "mwcc_40_1051": {
+      "platform": "nds_arm9",
+      "flags": [
+        {
+          "type": "flagset",
+          "id": "mwcc_opt_level",
+          "flags": [
+            "-O0",
+            "-O0,p",
+            "-O0,s",
+            "-O1",
+            "-O1,p",
+            "-O1,s",
+            "-O2",
+            "-O2,p",
+            "-O2,s",
+            "-O3",
+            "-O3,p",
+            "-O3,s",
+            "-O4",
+            "-O4,p",
+            "-O4,s"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_inline_options",
+          "flags": [
+            "-inline on",
+            "-inline off",
+            "-inline auto",
+            "-inline noauto",
+            "-inline all",
+            "-inline deferred",
+            "-inline bottomup",
+            "-inline nobottomup"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_string_constant_options",
+          "flags": [
+            "-str reuse",
+            "-str pool",
+            "-str readonly",
+            "-str reuse,pool,readonly"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_source_language",
+          "flags": [
+            "-lang=c",
+            "-lang=c++",
+            "-lang=c99",
+            "-lang=ec++",
+            "-lang=objc"
+          ]
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_char_signedness",
+          "flags": [
+            "-char signed",
+            "-char unsigned"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_cpp_exceptions_off",
+          "flag": "-Cpp_exceptions off"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_enum_size",
+          "flags": [
+            "-enum int",
+            "-enum min"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rtti_off",
+          "flag": "-RTTI off"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_line_numbers_on",
+          "flag": "-sym on"
+        },
+        {
+          "type": "flagset",
+          "id": "mwcc_floating_point",
+          "flags": [
+            "-fp soft",
+            "-fp vfpv1",
+            "-fp vfpv2"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_rostr",
+          "flag": "-rostr"
+        },
+        {
+          "type": "checkbox",
+          "id": "mwcc_enc_sjis",
+          "flag": "-enc SJIS"
+        }
+      ],
+      "diff_flags": [
+        {
+          "type": "flagset",
+          "id": "diff_algorithm",
+          "flags": [
+            "-DIFFlevenshtein",
+            "-DIFFdifflib"
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "diff_function_symbols",
+          "flag": "-DIFFdiff_function_symbols"
+        }
+      ]
+    },
+    "nds_arm9": {
+      "id": "nds_arm9",
+      "name": "Nintendo DS",
+      "description": "ARMv5TE",
+      "arch": "arm32",
+      "has_decompiler": false,
+      "presets": [
+        {
+          "id": 157,
+          "name": "Fire Emblem: Shadow Dragon",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_137",
+          "compiler_flags": "-O4,p -enum int -proc arm946e -gccext,on -fp soft -lang c99 -inline on,noauto -Cpp_exceptions off -gccinc -interworking -gccdep -g -sym on",
+          "diff_flags": [],
+          "libraries": []
+        },
+        {
+          "id": 128,
+          "name": "Phantom Hourglass",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_131",
+          "compiler_flags": "-O4,p -enum int -char signed -str noreuse -proc arm946e -gccext,on -fp soft -inline on,noauto -Cpp_exceptions off -RTTI off -interworking -sym on -lang=c++",
+          "diff_flags": [],
+          "libraries": []
+        },
+        {
+          "id": 99,
+          "name": "Pokémon Diamond / Pearl",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_123",
+          "compiler_flags": "-O4,p -enum int -proc arm946e -gccext,on -fp soft -lang c99 -inline on,noauto -Cpp_exceptions off -gccinc -interworking -gccdep -MD -g",
+          "diff_flags": [],
+          "libraries": []
+        },
+        {
+          "id": 100,
+          "name": "Pokémon HeartGold / SoulSilver",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_137",
+          "compiler_flags": "-O4,p -enum int -proc arm946e -gccext,on -fp soft -lang c99 -char signed -inline on,noauto -Cpp_exceptions off -gccinc -interworking -gccdep -MD -g",
+          "diff_flags": [],
+          "libraries": []
+        },
+        {
+          "id": 101,
+          "name": "Pokémon Mystery Dungeon: Explorers of Sky",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_137",
+          "compiler_flags": "-O4,s -enum min -proc arm946e -gccext,on -fp soft -lang c99 -char signed -inline on,noauto -Cpp_exceptions off -gccinc -interworking -gccdep -MD -g",
+          "diff_flags": [],
+          "libraries": []
+        },
+        {
+          "id": 148,
+          "name": "Sonic Rush Adventure",
+          "owner": null,
+          "platform": "nds_arm9",
+          "compiler": "mwcc_30_131",
+          "compiler_flags": "-O4,p -enum int -proc arm946e -gccext,on -fp soft -lang c99 -Cpp_exceptions off -gccinc -interworking -gccdep -MD -g -inline on -str reuse -lang=c -char signed -sym on",
+          "diff_flags": [],
+          "libraries": []
+        }
+      ]
+    }
+  }
+}
